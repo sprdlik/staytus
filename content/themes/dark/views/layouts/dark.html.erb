@@ -20,15 +20,15 @@
     <div class='container'>
 
       <ul class='siteFooter__nav'>
-        <li><a href='/history'><%= t("themes.dark.footer.history", :dark => 'History') %></a></li>
-        <li><a href='<%= site.website_url %>'><%= t("themes.dark.footer.homepage", :dark => 'Our Homepage') %></a></li>
+        <li><a href='/history'><%= t("themes.dark.footer.history", :default => 'History') %></a></li>
+        <li><a href='<%= site.website_url %>'><%= t("themes.dark.footer.homepage", :default => 'Our Homepage') %></a></li>
         <% if site.privacy_policy_url.present? %>
-        <li><a href='<%= site.privacy_policy_url %>'><%= t("themes.dark.footer.privacy_policy", :dark => 'Privacy Policy') %></a></li>
+        <li><a href='<%= site.privacy_policy_url %>'><%= t("themes.dark.footer.privacy_policy", :default => 'Privacy Policy') %></a></li>
         <% end %>
-        <li><a href='mailto:<%= site.support_email %>'><%= t("themes.dark.footer.contact_us", :dark => 'Contact Us') %></a></li>
+        <li><a href='mailto:<%= site.support_email %>'><%= t("themes.dark.footer.contact_us", :default => 'Contact Us') %></a></li>
       </ul>
       <p class='siteFooter__poweredBy'>
-        <%= t("themes.dark.footer.powered_by", :dark => "Powered by") %> <a href='http://staytus.co'>Staytus</a>
+        <%= t("themes.dark.footer.powered_by", :default => "Powered by") %> <a href='http://staytus.co'>Staytus</a>
       </p>
     </div>
   </footer>
